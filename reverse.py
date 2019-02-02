@@ -13,8 +13,10 @@
 # 输入: 120
 # 输出: 21
 # 解法一：
-# 转化成list，运用list内置反转函数实现
-# 以下是三种不同的写法
+
+
+
+# 转换成str然后使用str的下标内置排序结构：：index来进行反转排序
 class Solution:
     def reverse(self, x):
         """
@@ -31,7 +33,8 @@ class Solution:
             if -2**31 <= y <= 2**31 - 1:
                 return y
             else: return 0
-                
+
+# 转化成list，运用list下标内置排序结构：：index来进行反转排序
 class Solution:
     def reverse(self, x):
         """
@@ -49,7 +52,7 @@ class Solution:
             return 0
         else:
             return result
-
+# 转化成list，运用list内置反转函数reverse实现
 class Solution:
     def reverse(self, x):
         """
@@ -75,7 +78,7 @@ class Solution:
                 return 0
             return
 
-# 解法二：按位数不断相除在重复加回
+# 按位数不断相除在重复加回
 
 class Solution:
 
